@@ -20,7 +20,7 @@ References:
 
 - [Faster R-CNN](https://arxiv.org/abs/1506.01497)
 
-- [Tracktor](https://arxiv.org/abs/1903.05625=
+- [Tracktor](https://arxiv.org/abs/1903.05625)
 
 - [Tracktor-Code](https://github.com/phil-bergmann/tracking_wo_bnw)
 
