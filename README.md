@@ -12,49 +12,43 @@ Im2Flow predicts the optical flow of a scene based on static images.
 
 Training set of Im2Flow:
 
-    Input: single static image from a video sequence
-
-    Output: optical flow obtained from the video sequence
+- Input: single static image from a video sequence
+- Output: optical flow obtained from the video sequence
 
  In this project we will focus on pedestrians in the MOT17 dataset so that we will use the Im2Flow architecture and we anticipate that by limiting the variation of motion to standing, walking and running our Im2Flow regressor could work using less model complexity. If time allows we hope to exploit this and reduce the model complexity so it can be performed online and be used as an online extension of Tracktor.
 
 References:
 
-    Faster R-CNN: https://arxiv.org/abs/1506.01497
+- Faster R-CNN: https://arxiv.org/abs/1506.01497
 
-    Tracktor: https://arxiv.org/abs/1903.05625
+- Tracktor: https://arxiv.org/abs/1903.05625
 
-    Tracktor-Code: https://github.com/phil-bergmann/tracking_wo_bnw
+- Tracktor-Code: https://github.com/phil-bergmann/tracking_wo_bnw
 
-    MOT-Data: https://motchallenge.net/
+- [MOT-Data](https://motchallenge.net/)
 
-    Im2Flow: Motion Hallucination from Static Images for Action Recognition: https://arxiv.org/abs/1712.04109
+- Im2Flow: Motion Hallucination from Static Images for Action Recognition: https://arxiv.org/abs/1712.04109
 
 
 Initial Steps:
 
-    Visualize MOT17 dataset
-
-    Try dataset generation idea
-
-    Figure out and set up cloud infrastructure
-
-    Train the Tracktor++ model on MOT17 using the available GitHub repository and understand the CVA motion model interface
-
-    Understand Im2Flow paper: optical flow encoding and network architecture
-
-    Reimplement Im2Flow model
+- Visualize MOT17 dataset
+- Try dataset generation idea
+- Figure out and set up cloud infrastructure
+- Train the Tracktor++ model on MOT17 using the available GitHub repository and understand the CVA motion model interface
+- Understand Im2Flow paper: optical flow encoding and network architecture
+- Reimplement Im2Flow model
 
 
 
 Milestones:
 
-    Establish Tracktor as baseline using MOT17 as dataset using the existing github implementation
+ - Establish Tracktor as baseline using MOT17 as dataset using the existing github implementation
 
-    Generate a dataset from MOT17 with single frames as input and an optical flow estimation using the bounding box in step t and t+1 (direction and speed of movement) potentially for individual pedestrians by cropping the images to the bounding boxes
+- Generate a dataset from MOT17 with single frames as input and an optical flow estimation using the bounding box in step t and t+1 (direction and speed of movement) potentially for individual pedestrians by cropping the images to the bounding boxes
 
-    Reimplement Im2Flow model and thoroughly understand optical flow encoding 
+- Reimplement Im2Flow model and thoroughly understand optical flow encoding 
 
-    Train a motion hallucinator model based on the Im2Flow architecture and using the generated dataset
+- Train a motion hallucinator model based on the Im2Flow architecture and using the generated dataset
 
-    Extend or replace the CVA motion model in Tracktor++ with the prediction of the motion hallucinator
+- Extend or replace the CVA motion model in Tracktor++ with the prediction of the motion hallucinator
